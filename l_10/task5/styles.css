@@ -1,0 +1,16 @@
+
+* {
+box-sizing: border-box; 
+}
+header {
+    text-align: center;
+}
+.article{
+    padding: 16px;
+    margin-bottom: 8px; 
+    background-color: bisque;
+    flex-basis: 300px;  
+}
+main {
+    flex-wrap: wrap;
+}

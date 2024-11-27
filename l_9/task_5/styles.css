@@ -1,0 +1,86 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: darkturquoise;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Стили для навигации */
+.navigation {
+  height: 100%;
+  width: 100%;
+  margin-left: 16px;
+}
+
+.nav-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  line-height: 40px;
+  align-items: center;
+  margin-left: 24px;
+}
+
+.nav-item {
+  color: white;
+  margin-left: 16px;
+}
+
+/* Основное содержание */
+.content {
+  background-color: beige;
+  padding-top: 60px; /* Отступ, чтобы хедер не перекрывал контент */
+  height: 5000px;
+}
+
+  /* Стили для медведя */
+  .head {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .ear {
+    width: 40px;
+    height: 60px;
+    background-color: brown;
+    position: absolute;
+  }
+  
+  .ear_left {
+    top: -60px; /* Поднимаем ухо выше уровня головы */
+    left: -40px; /* Смещаем ухо к левому верхнему углу головы */
+  }
+  
+  .ear_right {
+    top: -60px; /* Поднимаем ухо выше уровня головы */
+    right: -40px; /* Смещаем ухо к правому верхнему углу головы */
+  }
+  
+  .eye {
+    width: 30px;
+    height: 30px;
+    background-color: grey;
+    border-radius: 50%;
+    position: absolute;
+  }
+  
+  .eye_left {
+    top: 80px;
+    left: 40px;
+  }
+  
+  .eye_right {
+    top: 80px;
+    right: 40px;
+  }

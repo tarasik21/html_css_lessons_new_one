@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box Sizing Example</title>
+  <!-- Normalize.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+  <style>
+    /* Основной стиль для body */
+    body {
+      background-color: antiquewhite;
+    }
+
+    /* Общие стили для div */
+    .box {
+      border: 8px solid black;
+      width: 512px;
+      height: 128px;
+      margin: 16px;
+      padding: 16px;
+    }
+
+    /* Специфичные стили для каждого типа box-sizing */
+    .content-box {
+      background-color: aquamarine;
+      box-sizing: content-box;
+    }
+
+    .border-box {
+      background-color: azure;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <!-- Первый div с box-sizing: content-box -->
+  <div class="box content-box">
+    Content Box Sizing
+  </div>
+  
+  <!-- Второй div с box-sizing: border-box -->
+  <div class="box border-box">
+    Border Box Sizing
+  </div>
+</body>
+</html>

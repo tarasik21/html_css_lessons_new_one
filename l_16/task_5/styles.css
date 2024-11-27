@@ -2,12 +2,11 @@
     box-sizing: border-box;
 }
 .form {
+
     margin: 32px;
 }
 
-.form input,
-.form textarea,
-.form select,
-.form button {
-    margin-bottom: 8px;
+.form div {
+
+    margin: 8px;
 }

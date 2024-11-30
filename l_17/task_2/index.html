@@ -12,42 +12,37 @@
     <title>Document</title>
     <style>
         
-        table{
-            width: 500px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table{
-            margin: 16px;
-        }
-        caption{
-            margin: 8px;
-        }
-        table , td, th {
-            border: 1px solid black;
-            border-collapse:  collapse;
-     
-        }
-        td, th{
-            padding: 4px;
-            text-align: right;
-            line-height: 40px;
-        }
-        th{
-            background-color: aqua;
-        }
-        div{
-            overflow-x:auto ;
-        }
-        tfoot{
-            font-weight: 700;
-        }
-        tbody>tr:nth-child(odd){
-            background-color: #f2f2f2;
-        }
-        tbody > tr:hover{
-            background-color: #aaa;
-            color: white;
-        }
+        @media (max-width: 500px) {
+  table {
+    display: none;
+  }
+}
+
+table tr {
+  height: 40px;
+}
+
+table td, table th {
+  padding: 4px;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+tbody tr:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+table caption {
+  background-color: aqua;
+  margin-bottom: 8px;
+}
+
+tfoot td {
+  font-weight: 700;
+}
     </style>
 </head>
 <body>

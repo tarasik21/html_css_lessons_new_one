@@ -11,6 +11,7 @@
   table {
     border-collapse: collapse;
     margin: 16px;
+    border: 1px solid black;
   }
 
   td {
@@ -22,8 +23,8 @@
   }
   
   
-  tr:nth-child(even) td:nth-child(odd),
-  tr:nth-child(odd) td:nth-child(even) {
+  tr:not(:first-child):not(:last-child):nth-child(even) td:not(:first-child):not(:last-child):nth-child(odd),
+  tr:not(:first-child):not(:last-child):nth-child(odd) td:not(:first-child):not(:last-child):nth-child(even) {
     background-color: black;
   }
   
@@ -37,11 +38,7 @@
   tr:first-child td,
   tr:last-child td {
     background-color: white;
-    border: none;
+
   }
 
-  tr:first-child td,
-  tr:last-child td {
-    font-size: 14px;
-    color: black;   
-  }
+

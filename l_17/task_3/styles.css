@@ -21,6 +21,7 @@
     font-size: 16px;
   }
   
+  
   tr:nth-child(even) td:nth-child(odd),
   tr:nth-child(odd) td:nth-child(even) {
     background-color: black;
@@ -41,8 +42,6 @@
 
   tr:first-child td,
   tr:last-child td {
-    font-weight: bold;
     font-size: 14px;
     color: black;   
   }
-

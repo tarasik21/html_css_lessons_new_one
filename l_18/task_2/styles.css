@@ -17,7 +17,7 @@
 .custom-button:hover{
     color: darkcyan;
 }
-.custom-button:hover>.bird-icon{
+.bird-icon:hover{
     fill: green;
 }
 

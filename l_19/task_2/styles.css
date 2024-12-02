@@ -2,23 +2,41 @@
     width: 100px;
     height: 100px;
     background-color: coral;
-    animation: move 4s linear infinite;
+    position: absolute;
+    animation: move 2s;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
   }
   
   @keyframes move {
     0% {
-      transform: translate(0, 0);
+        left: 0;
+        right: 0;
+        background-color: coral;
+
     }
     25% {
-      transform: translate(200px, 0);
+        left: 300px;
+        right: 0;
+        background-color: cornflowerblue;
+
     }
     50% {
-      transform: translate(200px, 200px);
+        left: 300px;
+        right: 300px;
+
+
     }
     75% {
-      transform: translate(0, 200px);
+        left: 0;
+        right: 300px;
+        background-color: aqua;
+
     }
     100% {
-      transform: translate(0, 0);
+        left: 150px;
+        right: 150px;
+        background-color: yellowgreen;
+
     }
   }

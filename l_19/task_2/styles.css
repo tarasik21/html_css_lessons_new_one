@@ -1,0 +1,24 @@
+.square {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    animation: move 4s linear infinite;
+  }
+  
+  @keyframes move {
+    0% {
+      transform: translate(0, 0);
+    }
+    25% {
+      transform: translate(200px, 0);
+    }
+    50% {
+      transform: translate(200px, 200px);
+    }
+    75% {
+      transform: translate(0, 200px);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }

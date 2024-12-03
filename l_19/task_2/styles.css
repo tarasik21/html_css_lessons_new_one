@@ -3,7 +3,7 @@
     height: 100px;
     background-color: coral;
     position: absolute;
-    animation: move 2s;
+    animation: move 4s;
     animation-direction: alternate;
     animation-fill-mode: forwards;
   }

@@ -1,6 +1,3 @@
-*{
-    box-sizing: border-box;
-}
 .container {
     display: flex;
     justify-content: center;
@@ -20,12 +17,11 @@
     border: 4px solid lightgrey;
     border-top-color: black;
     border-radius: 50%;
-    margin-bottom: 8px;
     animation: spin 2s linear infinite;
   }
   
   .spinner-text {
-
+    margin-top: 16px;
     font-family: monospace;
     font-size: 16px;
     text-transform: uppercase;

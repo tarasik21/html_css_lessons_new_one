@@ -3,34 +3,54 @@
     height: 100px;
     background-color: coral;
     position: absolute;
-    animation: move 4s;
-    animation-direction: alternate;
-    animation-fill-mode: forwards;
+animation: move 2s;
+animation-direction: alternate ;
   }
   
   @keyframes move {
     0% {
-        left: 0;
-        right: 0;
-        background-color: coral;
+      left: 0;
+      top: 0;
+      background-color: coral;
     }
     25% {
-        left: 300px;
-        top: 0;
-        background-color: cornflowerblue;
+      left: 300px;
+      top: 0;
+      background-color: cornflowerblue;
     }
     50% {
-        left: 300px;
-        top: 300px;
+      left: 300px;
+      top: 300px;
+      background-color: aqua;
     }
     75% {
-        left: 0;
-        top: 300px;
-        background-color: aqua;
+      left: 0;
+      top: 300px;
+      background-color: yellowgreen;
     }
     100% {
-        left: 150px;
-        top: 150px;
-        background-color: yellowgreen;
+      left: 0;
+      top: 0;
+      background-color: coral;
+    }
+    125% {
+      left: 0;
+      top: 300px;
+      background-color: yellowgreen;
+    }
+    150% {
+      left: 300px;
+      top: 300px;
+      background-color: aqua;
+    }
+    175% {
+      left: 300px;
+      top: 0;
+      background-color: cornflowerblue;
+    }
+    200% {
+      left: 0;
+      top: 0;
+      background-color: coral;
     }
   }

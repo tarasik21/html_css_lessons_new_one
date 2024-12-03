@@ -27,6 +27,7 @@
     margin-top: 16px;
     font-family: monospace;
     font-size: 16px;
+    text-transform: uppercase;
   }
   
   @keyframes spin {

@@ -16,21 +16,21 @@
     }
     25% {
         left: 300px;
-        right: 0;
+        top: 0;
         background-color: cornflowerblue;
     }
     50% {
         left: 300px;
-        right: 300px;
+        top: 300px;
     }
     75% {
         left: 0;
-        right: 300px;
+        top: 300px;
         background-color: aqua;
     }
     100% {
-        left: 150;
-        right: 150;
+        left: 150px;
+        top: 150px;
         background-color: yellowgreen;
     }
   }

@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+  }
 .container {
     display: flex;
     justify-content: center;
@@ -25,6 +28,7 @@
     font-family: monospace;
     font-size: 16px;
     text-transform: uppercase;
+    color: #8c8c8c; /* серый цвет текста */
     animation: fade 2s linear infinite;
   }
   

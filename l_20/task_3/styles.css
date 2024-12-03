@@ -20,15 +20,15 @@
     border: 4px solid lightgrey;
     border-top-color: black;
     border-radius: 50%;
+    margin-bottom: 8px;
     animation: spin 2s linear infinite;
   }
   
   .spinner-text {
-    margin-top: 16px;
+
     font-family: monospace;
     font-size: 16px;
     text-transform: uppercase;
-    color: #8c8c8c; /* серый цвет текста */
     animation: fade 2s linear infinite;
   }
   

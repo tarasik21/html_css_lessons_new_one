@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+    crossorigin="anonymous"
+  />
+</head>
+<style>
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.image-container {
+    margin: 50px 0;
+    text-align: center;
+}
+
+.image-container img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+.gallery {
+  display: flex;
+}
+
+.card {
+    box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
+    margin: 16px;
+}
+
+.card:nth-child(1) img {
+    filter: opacity(50%);
+}
+
+.card:nth-child(2) img {
+    filter: blur(4px);
+}
+
+.card:nth-child(3) img {
+    filter: invert(100%);
+}
+
+figcaption {
+    line-height: 30px;
+    text-align: center;
+    text-transform: lowercase;
+}
+
+</style>
+<body>
+  <div class="image-container">
+      <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg" alt="A large scenic image">
+  </div>
+  <div class="gallery">
+      <div class="card">
+          <figure>
+              <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg" alt="Filtered image with opacity">
+              <figcaption>opacity</figcaption>
+          </figure>
+      </div>
+      <div class="card">
+          <figure>
+              <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg" alt="Filtered image with blur">
+              <figcaption>blur</figcaption>
+          </figure>
+      </div>
+      <div class="card">
+          <figure>
+              <img src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg" alt="Filtered image with invert">
+              <figcaption>invert</figcaption>
+          </figure>
+      </div>
+  </div>
+</body>
+</html>

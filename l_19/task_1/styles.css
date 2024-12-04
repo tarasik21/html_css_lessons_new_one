@@ -1,0 +1,42 @@
+*{
+    box-sizing: border-box;
+}
+.container{
+    margin: 32px;
+}
+
+.rect{
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    margin-bottom: 16px;
+    opacity: 0.5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: width 2s, opacity 0.5s;
+}
+.rect.linear {
+transition-timing-function: linear;
+}
+
+.rect.ease {
+transition-timing-function: ease;
+}
+
+.rect.ease-in {
+transition-timing-function: ease-in;
+}
+
+.rect.ease-out {
+transition-timing-function: ease-out;
+}
+
+.rect.ease-in-out {
+transition-timing-function: ease-in-out;
+}
+
+.rect:hover {
+width: 100%;
+opacity: 1;
+}

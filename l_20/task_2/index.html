@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Animation</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI="
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body{
+        display: flex;
+        height: 100vh;
+    }
+    .fancy-button{
+        width: 150px;
+        height: 50px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: 700;
+        background-image: linear-gradient(45deg, yellow, red) ;
+        color: white;
+        border-radius: 4px;
+        border: none;
+        margin: auto;
+        animation: jump  0.5s,  spin  0.5s 0.4s, hide 1s 2s forwards ;
+
+    }
+    @keyframes jump{
+        0%{
+            transform: translateY(0);
+        }
+        50%{
+            transform: translateY(-40px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+    @keyframes spin {
+        0%{
+            transform: rotate(0);
+        }
+        50%{
+            transform: rotate(360deg);
+        }
+    }
+    @keyframes hide {
+        0%{
+            transform: translateX(0);
+        }
+        50%{
+            transform: translateX(2000px);
+        }
+    }
+  </style>
+
+  <body>
+    <button class="fancy-button">Fancy button</button>
+  </body>
+</html>

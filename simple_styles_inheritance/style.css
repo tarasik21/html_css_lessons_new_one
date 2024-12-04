@@ -1,0 +1,11 @@
+.text-green {
+    color: green;
+}
+
+.text-orange {
+    color: orange;
+}
+
+body {
+    font-size: 24px;
+}

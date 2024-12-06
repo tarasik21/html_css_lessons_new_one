@@ -30,6 +30,10 @@
     justify-content: center;
   }
   
+  .main {
+    display: flex;
+  }
+  
   .navigation,
   .section,
   .news {
@@ -37,15 +41,15 @@
   }
   
   .navigation {
-    flex: 1 0 20%;
+    flex: 0 0 20%;
   }
   
   .section {
-    flex: 1 0 60%;
+    flex: 0 0 60%;
   }
   
   .news {
-    flex: 1 0 20%;
+    flex: 0 0 20%;
   }
   
   .section__header {

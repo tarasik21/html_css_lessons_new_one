@@ -1,105 +1,98 @@
-* {
+*{
     box-sizing: border-box;
+}
+html {
+    font-family: Verdana;
+    font-size: 16px;
+    color: #555;
   }
   
   body {
-    font-family: Arial, sans-serif;
     margin: 0;
   }
   
 
   .header {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: linear-gradient(60deg, red, orange);
+    color: white;
+  }
+  .footer {
+    padding: 0.5em;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+  }
+  
+
+  .main {
+    display: flex;
+    padding: 0.5em;
+  }
+  
+  .navigation,
+  .section,
+  .news {
+    padding: 0.5em;
+  }
+  
+  .navigation {
+    width: 20%;
+  }
+  
+  .section {
+    width: 60%;
+    font-size: 1.25em;
+  }
+  
+  .news {
+    width: 20%;
+  }
+  
+  .section__header {
+    font-size: 5vw;
     text-align: center;
   }
   
 
-  .navigation {
-    background-color: #f1f1f1;
-    padding: 1rem;
+  .units-list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.75em;
   }
   
   .nav-list {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin: 0;
+    list-style: none;
     padding: 0;
   }
   
   .nav-list-item {
-    margin: 0 1rem;
+    background-color: #808080;
+    color: white;
+    line-height: 2em;
+    margin-bottom: 0.5em;
   }
   
   .nav-list-link {
-    color: #333;
+    display: block;
+    padding: 0 0.5em;
     text-decoration: none;
-  }
-  
-  .nav-list-link:hover {
-    color: #666;
+    color: white;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
   }
   
 
-  .section {
-    padding: 2rem;
-  }
-  
-  .section__header {
-    text-align: center;
-  }
-  
-  .units-list {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .units-list li {
-    margin-bottom: 1rem;
-  }
-  
   .css-units {
-    font-weight: bold;
-  }
-  
-
-  .news {
-    background-color: #f1f1f1;
-    padding: 2rem;
-    text-align: center;
-  }
-  
-
-  .footer {
-    background-color: #333;
-    color: #fff;
-    padding: 1rem;
-    text-align: center;
-  }
-  
-
-  @media (max-width: 600px) {
-    .nav-list {
-      flex-direction: column;
-      align-items: center;
-    }
-  
-    .nav-list-item {
-      margin: 0.5rem 0;
-    }
-  }
-  
-  @media (min-width: 1200px) {
-    .main {
-      display: flex;
-      justify-content: space-between;
-    }
-  
-    .navigation,
-    .section,
-    .news {
-      flex-basis: 30%;
-    }
+    font-size: 1.125em;
+    font-weight: 700;
+    color: #860000;
+    background-color: #e5e5e5;
   }

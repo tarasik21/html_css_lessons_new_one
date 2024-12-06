@@ -10,7 +10,7 @@
     font-size: 16px;
     color: #555;
   }
-
+  
   .header {
     text-align: center;
     background: linear-gradient(60deg, red, orange);
@@ -19,7 +19,7 @@
   .header h1 {
     color: white;
   }
-
+  
   .footer {
     position: fixed;
     bottom: 0;
@@ -28,11 +28,6 @@
     padding: 0.5em;
     display: flex;
     justify-content: center;
-  }
-
-  .main {
-    display: flex;
-    gap: 1em;
   }
   
   .navigation,
@@ -52,7 +47,7 @@
   .news {
     flex: 1 0 20%;
   }
-
+  
   .section__header {
     font-size: 5vw;
     text-align: center;
@@ -68,7 +63,7 @@
     font-weight: 700;
     padding: 0.125em 0.5em;
   }
-
+  
   .nav-list {
     list-style-type: none;
     padding-left: 0;

@@ -70,9 +70,7 @@ html {
 
 .units-list {
     line-height: 1.75em;
-    padding: 0 0.5em;
-    list-style-type: disc;
-}
+  }
 
 .css-units {
     color: #8b0000;
@@ -92,4 +90,4 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    margin-top: auto; 

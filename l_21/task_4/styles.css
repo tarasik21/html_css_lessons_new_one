@@ -71,12 +71,10 @@ html {
 }
 
 .css-units {
-    color: #b80000;
+    color: #8b0000;
     background-color: #e5e5e5;
     font-size: 1.125em;
     font-weight: 700;
-    padding: 0.2em;
-    border-radius: 0.4em;
 }
 
 .news {

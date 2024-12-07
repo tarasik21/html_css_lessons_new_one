@@ -10,6 +10,12 @@ html {
     font-size: 16px;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 .header {
     background: linear-gradient(60deg, red, orange);
     text-align: center;
@@ -20,11 +26,11 @@ html {
 
 .header h1 {
     color: white;
-
 }
 
 .main {
     display: flex;
+    flex: 1; 
 }
 
 .navigation {
@@ -35,22 +41,19 @@ html {
 .nav-list {
     list-style: none;
     padding: 0;
-    
-
 }
 
 .nav-list-item {
     background-color: #808080;
     margin-bottom: 0.5em;
-
+    overflow: hidden; 
 }
 
 .nav-list-link {
-
     width: 100%;
     color: white;
     line-height: 2em;
-    text-decoration: none;    
+    text-decoration: none;
     padding: 0.5em;
     white-space: nowrap;
     overflow: hidden;
@@ -65,7 +68,7 @@ html {
 
 .section__header {
     text-align: center;
-    font-size: 5vw;
+    font-size: 5vw; 
 }
 
 .units-list {
@@ -91,4 +94,5 @@ html {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+    margin-top: auto; 
+

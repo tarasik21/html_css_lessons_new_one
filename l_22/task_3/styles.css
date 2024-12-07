@@ -1,9 +1,12 @@
+*{
+    margin: 0;
+}
 main{
     display: flex;
 }
 img{
-    height: auto;
     max-width: 100%;
+
 }
 picture{
     margin: auto;

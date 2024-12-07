@@ -8,6 +8,13 @@ html {
     font-family: Verdana, sans-serif;
     color: #555;
     font-size: 16px;
+    height: 100%; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
 }
 
 .header {
@@ -20,11 +27,11 @@ html {
 
 .header h1 {
     color: white;
-
 }
 
 .main {
     display: flex;
+    flex: 1; 
 }
 
 .navigation {
@@ -35,8 +42,6 @@ html {
 .nav-list {
     list-style: none;
     padding: 0;
-    
-
 }
 
 .nav-list-item {
@@ -50,8 +55,8 @@ html {
     max-width: 100%;
     color: white;
     line-height: 2em;
-    text-decoration: none;    
-    padding: 0 0.5em ;
+    text-decoration: none;
+    padding: 0 0.5em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -70,7 +75,7 @@ html {
 
 .units-list {
     line-height: 1.75em;
-  }
+}
 
 .css-units {
     color: #8b0000;

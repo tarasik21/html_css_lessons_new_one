@@ -42,16 +42,16 @@ html {
 .nav-list-item {
     background-color: #808080;
     margin-bottom: 0.5em;
-
+    max-width: 100%;
 }
 
 .nav-list-link {
-
-    width: 100%;
+    display: block;
+    max-width: 100%;
     color: white;
     line-height: 2em;
     text-decoration: none;    
-    padding: 0.5em;
+    padding: 0 0.5em ;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;

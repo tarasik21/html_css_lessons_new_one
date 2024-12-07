@@ -24,14 +24,18 @@ span{
     margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-@media  screen and (min-width: 600px) {
-    .products{
+@media (min-width: 600px) {
+    .products {
         display: flex;
-        flex-grow: 2;
+        flex: 2; 
     }
 }
-@media  screen and (min-width: 900px) {
+
+@media (min-width: 900px) {
     .content {
         display: flex;
+    }
+    .navigation, .products-list, .news {
+        flex: 1; 
     }
 }

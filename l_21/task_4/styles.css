@@ -46,17 +46,17 @@ body {
 .nav-list-item {
     background-color: #808080;
     margin-bottom: 0.5em;
-    overflow: hidden; 
+
 }
 
 .nav-list-link {
-    width: 100%;
+    max-width: 100%;
     color: white;
     line-height: 2em;
     text-decoration: none;
     padding: 0.5em;
     white-space: nowrap;
-    overflow: hidden;
+    overflow: hidden; 
     text-overflow: ellipsis;
 }
 
@@ -79,7 +79,7 @@ body {
 .css-units {
     color: #8b0000;
     background-color: #e5e5e5;
-    font-size: 1.125em;
+    font-size: 1.125rem;
     font-weight: 700;
 }
 

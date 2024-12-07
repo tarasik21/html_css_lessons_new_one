@@ -17,23 +17,21 @@
     flex-grow: 1;
 }
 span{
-    background-color: beige;
-    padding: 4px;
+    background-color: #faebd7;
+    padding: 8px;
     border-radius: 4px;
     text-transform: lowercase;
     margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
-@media  and(min-width: 600px) {
+@media  screen and (min-width: 600px) {
     .products{
         display: flex;
         flex-grow: 2;
     }
 }
-@media  and(min-width: 900px) {
-    .navigation,
-    .products-list,
-    .news {
+@media  screen and (min-width: 900px) {
+    .content {
         display: flex;
-        width: 33.33%; 
     }
 }

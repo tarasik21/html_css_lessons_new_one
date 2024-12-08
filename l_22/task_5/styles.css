@@ -97,7 +97,6 @@ body {
     align-items: center;
     margin-top: auto; 
 }
-
 @media (max-width: 600px) {
     .main {
         flex-direction: column;
@@ -119,82 +118,12 @@ body {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 }
-
-/* Для экранов от 600px до 899px */
-@media (min-width: 600px) and (max-width: 899px) {
-    .main {
-        flex-direction: column;
-    }
-
-    .navigation,
-    .section,
-    .news {
-        width: 100%;
-    }
-
-    .section__header {
-        font-size: 5vw;
-    }
-
-    picture img {
-        width: 100%;
-        height: auto;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-}
-
-@media (max-width: 599px) {
-    .main {
-        flex-direction: column;
-    }
-
-    .navigation,
-    .section,
-    .news {
-        width: 100%;
-    }
-
-    .section__header {
-        font-size: 5vw;
-    }
-
-    picture img {
-        width: 100%;
-        height: auto;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-}
-
-
-
-@media (max-width: 600px) {
-    .main {
-        flex-direction: column;
-    }
-
-    .navigation,
-    .section,
-    .news {
-        width: 100%;
-    }
-
-    .section__header {
-        font-size: 5vw;
-    }
-
-    picture img {
-        width: 100%;
-        height: auto;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-}
-
-
 @media (min-width: 600px) and (max-width: 1200px) {
     .main {
-        flex-direction: row;
+        flex-direction: column;
     }
-    .navigation{
+
+    .navigation {
         width: 20%;        
     }
 

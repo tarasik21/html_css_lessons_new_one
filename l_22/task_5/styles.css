@@ -29,7 +29,7 @@ body {
   color: white;
 }
 
-/* Изображение под хедером */
+
 .image-container {
   text-align: center;
 }
@@ -41,14 +41,13 @@ body {
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-
+/* Основной контейнер */
 .main {
   display: flex;
   flex: 1;
 }
 
 .navigation {
-  width: 20%;
   padding: 0.5em;
 }
 
@@ -76,13 +75,11 @@ body {
 }
 
 .section {
-  width: 60%;
   padding: 0.5em;
   font-size: 1.25em;
 }
 
 .news {
-  width: 20%;
   padding: 0.5em;
 }
 
@@ -115,10 +112,6 @@ body {
 @media (min-width: 601px) and (max-width: 1200px) {
   .responsive-image {
     content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png');
-  }
-
-  .main {
-    flex-direction: row;
   }
 
   .navigation {

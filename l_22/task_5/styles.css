@@ -32,8 +32,6 @@ body {
 .main {
     display: flex;
     flex: 1; 
-    flex-direction: column;
-    padding: 1em;
 }
 
 .navigation {
@@ -65,7 +63,7 @@ body {
 }
 
 .section {
-    width: 100%;
+    width: 60%;
     padding: 0.5em;
     font-size: 1.25em;
 }
@@ -87,7 +85,7 @@ body {
 }
 
 .news {
-    width: 100%;
+    width: 20%;
     padding: 0.5em;
 }
 
@@ -100,7 +98,6 @@ body {
     margin-top: auto; 
 }
 
-/* Адаптивные стили */
 @media (max-width: 600px) {
     .main {
         flex-direction: column;
@@ -119,6 +116,7 @@ body {
     picture img {
         width: 100%;
         height: auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -142,6 +140,7 @@ body {
     picture img {
         width: 100%;
         height: auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 }
 
@@ -165,5 +164,6 @@ body {
     picture img {
         width: 100%;
         height: auto;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 }

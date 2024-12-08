@@ -121,7 +121,7 @@ body {
 }
 
 
-@media (min-width: 600px) and (max-width: 899px) {
+@media (min-width: 600px) and (max-width: 1200px) {
     .main {
         flex-direction: column;
     }
@@ -142,33 +142,6 @@ body {
         box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
     }
 }
-
-
-@media (min-width: 900px) and (max-width: 1199px) {
-    .main {
-        flex-direction: row;
-    }
-
-    .navigation {
-        width: 20%;
-    }
-
-    .section {
-        width: 60%;
-    }
-
-    .news {
-        width: 20%;
-    }
-
-    picture img {
-        width: 100%;
-        height: auto;
-        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    }
-}
-
-
 @media (min-width: 1200px) {
     .main {
         flex-direction: row;

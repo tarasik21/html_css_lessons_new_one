@@ -2,8 +2,6 @@
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 html {
@@ -11,21 +9,20 @@ html {
   font-size: 16px;
 }
 
+
 .header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
   height: 3em;
-  padding: 0 1em;
   background-color: #eee;
+  padding: 0 1em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.header::before {
-  content: '\f0c9';
-  font-family: 'Font Awesome 5 Free';
-  font-weight: 900;
-  font-size: 2em;
-  cursor: pointer;
+
+.navigation {
+  width: 20%;
+  padding: 0.5em;
 }
 
 .nav-list {
@@ -34,40 +31,45 @@ html {
 }
 
 .nav-list-item {
+  background-color: #808080;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .nav-list-link {
   display: block;
-  padding: 0.5em;
   color: white;
   text-decoration: none;
-  background-color: #808080;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  font-size: 1em;
-  height: 2em;
+  padding: 0 0.5em;
   line-height: 2em;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
-.nav-list-link:hover {
-  background-color: #555;
+
+.nav-list-item + .nav-list-item {
+  margin-top: 0.5em;
 }
 
-@media (min-width: 600px) {
-  .header::before {
-    display: none;
-  }
-  .navigation {
-    display: block;
-    width: 20%;
-    padding: 0.5em;
-  }
-}
 
 @media (max-width: 600px) {
   .navigation {
-    display: none;
+    display: none; 
+  }
+
+  .menu-toggle {
+    display: block; 
+  }
+}
+
+
+@media (min-width: 600px) {
+  .navigation {
+    display: block; 
+  }
+
+  .menu-toggle {
+    display: none; 
   }
 }

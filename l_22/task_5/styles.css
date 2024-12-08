@@ -126,7 +126,7 @@ body {
 
 @media (min-width: 600px) and (max-width: 1200px) {
     .main {
-        flex-direction: column;
+        flex-wrap: wrap;
     }
     .navigation{
         width: 20%;        

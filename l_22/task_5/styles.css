@@ -1,0 +1,153 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: Verdana, sans-serif;
+  color: #555;
+  font-size: 16px;
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  background: linear-gradient(60deg, red, orange);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  color: white;
+}
+
+/* Изображение под хедером */
+.image-container {
+  text-align: center;
+}
+
+.responsive-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.main {
+  display: flex;
+  flex: 1;
+}
+
+.navigation {
+  width: 20%;
+  padding: 0.5em;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.nav-list-item {
+  background-color: #808080;
+  margin-bottom: 0.5em;
+  max-width: 100%;
+}
+
+.nav-list-link {
+  display: block;
+  max-width: 100%;
+  color: white;
+  line-height: 2em;
+  text-decoration: none;
+  padding: 0 0.5em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section {
+  width: 60%;
+  padding: 0.5em;
+  font-size: 1.25em;
+}
+
+.news {
+  width: 20%;
+  padding: 0.5em;
+}
+
+.footer {
+  background-color: #e5e5e5;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+}
+
+
+@media (max-width: 600px) {
+  .responsive-image {
+    content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/small.png');
+  }
+
+  .main {
+    flex-direction: column;
+  }
+
+  .navigation,
+  .section,
+  .news {
+    width: 100%;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 1200px) {
+  .responsive-image {
+    content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png');
+  }
+
+  .main {
+    flex-direction: row;
+  }
+
+  .navigation {
+    width: 20%;
+  }
+
+  .section {
+    width: 60%;
+  }
+
+  .news {
+    width: 20%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .responsive-image {
+    content: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson22/hw2/big.png');
+  }
+
+  .navigation {
+    width: 20%;
+  }
+
+  .section {
+    width: 60%;
+  }
+
+  .news {
+    width: 20%;
+  }
+}

@@ -194,11 +194,13 @@ body {
     .main {
         flex-direction: column;
     }
+    .navigation{
+        width: 20%;        
+    }
 
-    .navigation,
     .section,
     .news {
-        width: 100%;
+        width: 80%;
     }
 
     .section__header {

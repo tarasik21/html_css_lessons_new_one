@@ -17,7 +17,7 @@ body{
     margin: 8px;
 
     @include for-extra-small {
-        background-color: #ff7f50;
+        background-color: #ff7f50; 
       }
     
       @include for-medium-up {
@@ -25,7 +25,7 @@ body{
       }
     
       @include for-large-up {
-        background-color: #a61;
+        background-color: #a61; 
       }
     
       @media screen and (min-width: 1200px) {

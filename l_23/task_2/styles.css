@@ -26,4 +26,23 @@ body {
   }
 }
 
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  height: 100vh;
+  flex-wrap: wrap;
+}
+@media screen and (orientation: landscape) {
+  .container {
+    flex-direction: row;
+  }
+}
+@media screen and (orientation: portrait) {
+  .container {
+    flex-direction: column;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

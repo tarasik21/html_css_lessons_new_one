@@ -23,8 +23,24 @@ body{
     @include for-large-up{
         background-color: #c47;
     }
-}
-.container{
-
 
 }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px; 
+    height: 100vh; 
+    flex-wrap: wrap;
+  
+
+    @media screen and (orientation: landscape) {
+      flex-direction: row;
+    }
+  
+
+    @media screen and (orientation: portrait) {
+      flex-direction: column;
+    }
+  }
+

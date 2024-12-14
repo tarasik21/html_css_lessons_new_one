@@ -43,15 +43,4 @@
   display: block;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 16px;
-}
-
-.submenu__item {
-  padding: 8px 0;
-}
-
-.menu__item-text {
-  cursor: pointer;
-}
+/*# sourceMappingURL=styles.css.map */

@@ -1,31 +1,15 @@
-*{
-    box-sizing: border-box;
-}
-body{
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-.menu,
-.submenu {
-  list-style-type: none; 
-  margin: 0;
-  padding: 0 0 0 3em; 
-  text-transform: uppercase;
-}
+@import 'header.scss';
 
 
-.menu__item,
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 16px;
+}
+
 .submenu__item {
-  margin: 0; 
-  padding: 0; 
+  padding: 8px 0;
 }
 
-
-.submenu {
-  margin-top: 0; 
-  margin-bottom: 0; 
-}
-.menu__item,
-.submenu__item{
-padding: ;
+.menu__item-text {
+  cursor: pointer;
 }

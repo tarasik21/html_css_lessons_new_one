@@ -1,0 +1,13 @@
+@import 'layout';
+
+$font-classic: Verdana, Geneva, Tahoma, sans-serif;
+$background-color: #faebd7;
+
+span {
+  background-color: $background-color;
+  padding: 8px;
+  border-radius: 4px;
+  text-transform: lowercase;
+  margin: auto;
+  font-family: $font-classic;
+}

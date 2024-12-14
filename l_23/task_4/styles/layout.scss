@@ -1,0 +1,34 @@
+$min-height: 200px;
+
+.section {
+  min-height: $min-height;
+  display: flex;
+  flex: 1;
+
+  &--navigation {
+    background-color: #ff7f50;
+  }
+  &--products {
+    background-color: #006400;
+  }
+  &--news {
+    background-color: #0ff;
+  }
+}
+
+@media (min-width: 600px) {
+  .products {
+    display: flex;
+    flex: 2;
+  }
+}
+
+@media (min-width: 900px) {
+  .content {
+    display: flex;
+
+    .section {
+      flex: 1;
+    }
+  }
+}

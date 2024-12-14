@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.menu,
+.submenu {
+  list-style-type: none; 
+  margin: 0;
+  padding: 0 0 0 3em; 
+  text-transform: uppercase;
+}
+
+
+.menu__item,
+.submenu__item {
+  margin: 0; 
+  padding: 0; 
+}
+
+
+.submenu {
+  margin-top: 0; 
+  margin-bottom: 0; 
+}
+.menu__item,
+.submenu__item{
+padding: ;
+}

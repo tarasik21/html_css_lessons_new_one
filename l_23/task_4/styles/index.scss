@@ -1,13 +1,6 @@
-@import 'layout';
 
-$font-classic: Verdana, Geneva, Tahoma, sans-serif;
-$background-color: #faebd7;
-
-span {
-  background-color: $background-color;
-  padding: 8px;
-  border-radius: 4px;
-  text-transform: lowercase;
-  margin: auto;
-  font-family: $font-classic;
-}
+$navigation-bg: #ff7f50;
+$products-list-bg: #006400;
+$news-bg: #0ff;
+$span-bg: #faebd7;
+$font-family: Verdana, Geneva, Tahoma, sans-serif;

@@ -1,34 +1,46 @@
-$min-height: 200px;
+@import 'index'; 
 
-.section {
-  min-height: $min-height;
+.navigation {
+  background-color: $navigation-bg;
+  min-height: 200px;
   display: flex;
   flex: 1;
-
-  &--navigation {
-    background-color: #ff7f50;
-  }
-  &--products {
-    background-color: #006400;
-  }
-  &--news {
-    background-color: #0ff;
-  }
 }
 
+.products-list {
+  background-color: $products-list-bg;
+  min-height: 200px;
+  display: flex;
+  flex: 1;
+}
+
+.news {
+  background-color: $news-bg;
+  min-height: 200px;
+  display: flex;
+  flex: 1;
+}
+
+span {
+  background-color: $span-bg;
+  padding: 8px;
+  border-radius: 4px;
+  text-transform: lowercase;
+  margin: auto;
+  font-family: $font-family;
+}
 @media (min-width: 600px) {
-  .products {
-    display: flex;
-    flex: 2;
+    .products {
+      display: flex;
+      flex: 2;
+    }
   }
-}
-
-@media (min-width: 900px) {
-  .content {
-    display: flex;
-
-    .section {
+  
+  @media (min-width: 900px) {
+    .content {
+      display: flex;
+    }
+    .navigation, .products-list, .news {
       flex: 1;
     }
   }
-}

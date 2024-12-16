@@ -60,6 +60,9 @@
 .header nav .menu .submenu__item:hover {
   color: #000;
 }
+.header nav .menu .submenu__item:last-child {
+  padding-top: 15px;
+}
 
 * {
   box-sizing: border-box;

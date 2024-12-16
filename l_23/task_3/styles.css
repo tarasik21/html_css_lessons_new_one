@@ -40,7 +40,7 @@
 .header nav .menu__item:hover .submenu {
   display: block;
 }
-.header nav .menu__item .submenu {
+.header nav .menu .submenu {
   display: none;
   position: absolute;
   top: 100%;
@@ -53,11 +53,13 @@
   min-width: 120px;
   z-index: 1;
   list-style: none;
+  box-sizing: border-box;
 }
-.header nav .menu__item .submenu__item {
+.header nav .menu .submenu__item {
   padding: 8px;
+  color: #fff;
 }
-.header nav .menu__item .submenu__item:hover {
+.header nav .menu .submenu__item:hover {
   color: black;
 }
 
